@@ -4,7 +4,7 @@
  * Company:				Walla Walla University
  * Class:					Embedded Systems Design
  *
- * File Name:			main.c
+ * File Name:			Main.c
  * Purpose:				base controller for my project
  *----------------------------------------------------------------------------*/
 
