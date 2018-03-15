@@ -1,0 +1,9 @@
+.\objects\led_frdm-kl25z.o: C:\App\Kiel\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.14.0\Boards\NXP\FRDM-KL25Z\Common\LED_FRDM-KL25Z.c
+.\objects\led_frdm-kl25z.o: C:\App\Kiel\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.14.0\Device\Include\MKL25Z4.h
+.\objects\led_frdm-kl25z.o: C:\App\Kiel\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\led_frdm-kl25z.o: C:\App\Kiel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h
+.\objects\led_frdm-kl25z.o: C:\App\Kiel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h
+.\objects\led_frdm-kl25z.o: C:\App\Kiel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h
+.\objects\led_frdm-kl25z.o: C:\App\Kiel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h
+.\objects\led_frdm-kl25z.o: .\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h
+.\objects\led_frdm-kl25z.o: C:\App\Kiel\ARM\PACK\Keil\MDK-Middleware\7.4.1\Board\Board_LED.h
