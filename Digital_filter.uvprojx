@@ -381,9 +381,9 @@
           <GroupName>Source Files</GroupName>
           <Files>
             <File>
-              <FileName>main.c</FileName>
+              <FileName>Blinky.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Digital_Filter\main.c</FilePath>
+              <FilePath>N:\Embedded_Systems_Project\Keil\Digital_Filter\Blinky.c</FilePath>
             </File>
           </Files>
         </Group>

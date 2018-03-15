@@ -180,8 +180,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\Digital_Filter\main.c</PathWithFileName>
-      <FilenameWithoutPath>main.c</FilenameWithoutPath>
+      <PathWithFileName>N:\Embedded_Systems_Project\Keil\Digital_Filter\Blinky.c</PathWithFileName>
+      <FilenameWithoutPath>Blinky.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
