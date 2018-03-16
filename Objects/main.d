@@ -1,4 +1,4 @@
-.\objects\main.o: ..\Digital_Filter\main.c
+.\objects\main.o: Main.c
 .\objects\main.o: C:\App\Kiel\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.14.0\Device\Include\MKL25Z4.h
 .\objects\main.o: C:\App\Kiel\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\main.o: C:\App\Kiel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h
@@ -6,4 +6,9 @@
 .\objects\main.o: C:\App\Kiel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h
 .\objects\main.o: C:\App\Kiel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h
 .\objects\main.o: .\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h
+.\objects\main.o: Board_LEDs.h
+.\objects\main.o: Defines.h
+.\objects\main.o: Display.h
+.\objects\main.o: My_LEDs.h
 .\objects\main.o: C:\App\Kiel\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\main.o: Switches.h
