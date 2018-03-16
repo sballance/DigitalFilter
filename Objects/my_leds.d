@@ -1,0 +1,11 @@
+.\objects\my_leds.o: My_LEDs.c
+.\objects\my_leds.o: C:\App\Kiel\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.14.0\Device\Include\MKL25Z4.h
+.\objects\my_leds.o: C:\App\Kiel\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\my_leds.o: C:\App\Kiel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h
+.\objects\my_leds.o: C:\App\Kiel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h
+.\objects\my_leds.o: C:\App\Kiel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h
+.\objects\my_leds.o: C:\App\Kiel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h
+.\objects\my_leds.o: .\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h
+.\objects\my_leds.o: Defines.h
+.\objects\my_leds.o: My_LEDs.h
+.\objects\my_leds.o: C:\App\Kiel\ARM\ARMCC\Bin\..\include\stdbool.h

@@ -89,7 +89,7 @@
             <nStopA1X>0</nStopA1X>
             <nStopA2X>0</nStopA2X>
           </AfterMake>
-          <SelectedForBatchBuild>0</SelectedForBatchBuild>
+          <SelectedForBatchBuild>1</SelectedForBatchBuild>
           <SVCSIdString></SVCSIdString>
         </TargetCommonOption>
         <CommonProperty>
@@ -384,6 +384,56 @@
               <FileName>Main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Main.c</FilePath>
+            </File>
+            <File>
+              <FileName>Board_LEDs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Board_LEDs.c</FilePath>
+            </File>
+            <File>
+              <FileName>Display.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Display.c</FilePath>
+            </File>
+            <File>
+              <FileName>My_LEDs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\My_LEDs.c</FilePath>
+            </File>
+            <File>
+              <FileName>Switches.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Switches.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Header Files</GroupName>
+          <Files>
+            <File>
+              <FileName>Defines.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Defines.h</FilePath>
+            </File>
+            <File>
+              <FileName>Board_LEDs.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Board_LEDs.h</FilePath>
+            </File>
+            <File>
+              <FileName>Display.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Display.h</FilePath>
+            </File>
+            <File>
+              <FileName>My_LEDs.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\My_LEDs.h</FilePath>
+            </File>
+            <File>
+              <FileName>Switches.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Switches.h</FilePath>
             </File>
           </Files>
         </Group>
