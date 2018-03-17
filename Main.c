@@ -34,7 +34,7 @@ void delay(volatile unsigned int time_del) {
 void initialize_board() {
 	// Enable Clock to Port B, C, D, E
 	SIM->SCGC5 |= SIM_SCGC5_PORTB_MASK | SIM_SCGC5_PORTC_MASK | SIM_SCGC5_PORTD_MASK | SIM_SCGC5_PORTE_MASK;
-//	display_init();
+	display_init();
 	LED_init();
 	board_LED_init();
 	switch_init();
