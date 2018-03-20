@@ -24,22 +24,17 @@
  * functions
  *----------------------------------------------------------------------------*/
 
- 
-
-
-
-
-
-
 void delay(volatile unsigned int time_del) {
 	while (time_del--) {
 		;
 	}
 }
 
+
 void initialize_board() {
 	// Enable Clock to Port B, C, D, E
 	SIM->SCGC5 |= SIM_SCGC5_PORTB_MASK | SIM_SCGC5_PORTC_MASK | SIM_SCGC5_PORTD_MASK | SIM_SCGC5_PORTE_MASK;
+	display_init();
 	LED_init();
 	board_LED_init();
 	switch_init();
@@ -51,11 +46,13 @@ void initialize_board() {
 int main (void) {
 	initialize_board();
 	
+	char *message[1] = {"hi"};
+	send_message("hi");
+	
+	delay(500000);
+	send_message("hello again");
+	
 	while(1) {
-		if(!(PTC->PDIR & MASK(switch_1))) {
-			set_LEDs(1, 1, 1);
-		} else {
-			set_LEDs(0, 0, 0);
-		}
+
 	}
 };

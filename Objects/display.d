@@ -8,3 +8,4 @@
 .\objects\display.o: .\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h
 .\objects\display.o: Defines.h
 .\objects\display.o: Display.h
+.\objects\display.o: C:\App\Kiel\ARM\ARMCC\Bin\..\include\stdbool.h

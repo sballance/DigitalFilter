@@ -9,6 +9,6 @@
 .\objects\main.o: Board_LEDs.h
 .\objects\main.o: Defines.h
 .\objects\main.o: Display.h
-.\objects\main.o: My_LEDs.h
 .\objects\main.o: C:\App\Kiel\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\main.o: My_LEDs.h
 .\objects\main.o: Switches.h
