@@ -2,6 +2,11 @@
 #include "Defines.h"
 #include "Display.h"
 
+char *message[100];		// initialize array for holding message in case it is long enough to scroll
+int current_line = 0;
+int last_line = 1;
+int line;
+
 void display_init() {
 	// Make pins GPIO
 	uint32_t k;
@@ -33,7 +38,7 @@ void display_init() {
 	LCD_command(0x38);				// 8bit data, 2-line, 5x8 ch
 	LCD_command(0x06);				// move cursor right
 	LCD_command(0x01);				// clr screen, home cursor
-	LCD_command(0x0F);				// display on, cursor blinking
+	LCD_command(0x0C);				// display on, cursor blinking
 }
 
 
@@ -80,30 +85,52 @@ void delayMs(uint32_t n) {
 
 void send_multiline_message(char **display_lines) {
 	LCD_command(0x01);							// Clear the screen
-	
+	line = 0;
 	while(*display_lines)
 	{
-		send_string(*display_lines);
-		LCD_command(0xC0);						// Force the cursor to the beginning of the second line
+		message[line] = *display_lines;
+		// if this is either the first or second line that we want displayed then display it, otherwise skip it
+		if ((line == current_line) && ((1 == (last_line - current_line)) || (0 == (last_line - current_line)))) {
+			send_string(*display_lines);
+			LCD_command(0xC0);						// Force the cursor to the beginning of the second line
+			current_line++;
+		}
 		display_lines++;
+		line++;
 	}
+}
+
+
+void send_message(char *string) {
+	LCD_command(0x01);							// Clear the screen
+	send_string(string);
 }
 	
 
 void send_string(char *s) {
     while(*s)
     {
-        LCD_data(*s);
-        s++;
+			LCD_data(*s);
+			s++;
     }
 }
 
 
-void scroll_up () {
-	
+void scroll_up() {
+	// if we can scroll up
+	if (current_line > 2) {
+		current_line = current_line - 3;
+		last_line = current_line + 1;
+		send_multiline_message(message);
+	}
 }
 
 
-void scroll_down () {
-	
+void scroll_down() {
+	// if we can scroll down
+	if (line != last_line) {
+		current_line = last_line;
+		last_line++;
+		send_multiline_message(message);
+	}
 }

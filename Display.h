@@ -1,3 +1,5 @@
+#include "stdbool.h"										// Booleans
+
 #define DISPLAY_RW								(1)		// Read/Write output on port E
 #define DISPLAY_RS								(2)		// Register select output on port E
 #define DISPLAY_ENABLE						(0)		// Operation (data read/write) enable signal on port E
@@ -18,8 +20,10 @@ void delayMs(uint32_t n);
 
 void send_multiline_message(char **display_lines);
 
+void send_message(char *string);
+
 void send_string(char *s);
 
-//void scroll_up();
+void scroll_up();
 
-//void scroll_down();
+void scroll_down();

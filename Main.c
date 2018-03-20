@@ -46,15 +46,13 @@ void initialize_board() {
 int main (void) {
 	initialize_board();
 	
-	char *message[2] = {"Hello", "World"};
-	send_multiline_message(message);
+	char *message[1] = {"hi"};
+	send_message("hi");
+	
+	delay(500000);
+	send_message("hello again");
 	
 	while(1) {
-//		send_string("Hello World");
-//		if(!(PTC->PDIR & MASK(switch_1))) {
-//			set_LEDs(1, 1, 1);
-//		} else {
-//			set_LEDs(0, 0, 0);
-//		}
+
 	}
 };
