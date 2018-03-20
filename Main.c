@@ -46,7 +46,8 @@ void initialize_board() {
 int main (void) {
 	initialize_board();
 	
-	send_string("Hello World");
+	char *message[2] = {"Hello", "World"};
+	send_multiline_message(message);
 	
 	while(1) {
 //		send_string("Hello World");

@@ -16,10 +16,10 @@ void LCD_command(uint32_t command);
 
 void delayMs(uint32_t n);
 
-void send_message(char **display_lines);
+void send_multiline_message(char **display_lines);
 
 void send_string(char *s);
 
-void scroll_up();
+//void scroll_up();
 
-void scroll_down();
+//void scroll_down();

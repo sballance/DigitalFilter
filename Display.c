@@ -78,15 +78,16 @@ void delayMs(uint32_t n) {
 }
 
 
-//void send_message_array(char **display_lines) {
-//	while(**display_lines)
-//	{
-//		LCD_command(0x01);
-//		send_string(*display_lines);
-//		LCD_command(0xC0);
-//		display_lines++;
-//	}
-//}
+void send_multiline_message(char **display_lines) {
+	LCD_command(0x01);							// Clear the screen
+	
+	while(*display_lines)
+	{
+		send_string(*display_lines);
+		LCD_command(0xC0);						// Force the cursor to the beginning of the second line
+		display_lines++;
+	}
+}
 	
 
 void send_string(char *s) {
@@ -98,11 +99,11 @@ void send_string(char *s) {
 }
 
 
-//void scroll_up () {
-//	
-//}
+void scroll_up () {
+	
+}
 
 
-//void scroll_down () {
-//	
-//}
+void scroll_down () {
+	
+}
