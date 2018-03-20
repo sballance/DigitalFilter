@@ -38,7 +38,7 @@ void display_init() {
 	LCD_command(0x38);				// 8bit data, 2-line, 5x8 ch
 	LCD_command(0x06);				// move cursor right
 	LCD_command(0x01);				// clr screen, home cursor
-	LCD_command(0x0C);				// display on, cursor blinking
+	LCD_command(0x0C);				// display on without cursor
 }
 
 

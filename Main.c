@@ -46,13 +46,7 @@ void initialize_board() {
 int main (void) {
 	initialize_board();
 	
-	char *message[1] = {"hi"};
-	send_message("hi");
-	
-	delay(500000);
-	send_message("hello again");
-	
-	while(1) {
+//	while(1) {
 
-	}
+//	}
 };
