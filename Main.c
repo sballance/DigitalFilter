@@ -46,11 +46,14 @@ void initialize_board() {
 int main (void) {
 	initialize_board();
 	
+	send_string("Hello World");
+	
 	while(1) {
-		if(!(PTC->PDIR & MASK(switch_1))) {
-			set_LEDs(1, 1, 1);
-		} else {
-			set_LEDs(0, 0, 0);
-		}
+//		send_string("Hello World");
+//		if(!(PTC->PDIR & MASK(switch_1))) {
+//			set_LEDs(1, 1, 1);
+//		} else {
+//			set_LEDs(0, 0, 0);
+//		}
 	}
 };
