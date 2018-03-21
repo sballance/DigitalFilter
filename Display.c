@@ -1,5 +1,3 @@
-#include "MKL25Z4.h"
-#include "Defines.h"
 #include "Display.h"
 
 char *message[100];		// initialize array for holding message in case it is long enough to scroll

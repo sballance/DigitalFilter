@@ -1,0 +1,16 @@
+.\objects\menu.o: Menu.c
+.\objects\menu.o: Menu.h
+.\objects\menu.o: Display.h
+.\objects\menu.o: C:\App\Kiel\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\menu.o: C:\App\Kiel\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.14.0\Device\Include\MKL25Z4.h
+.\objects\menu.o: C:\App\Kiel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h
+.\objects\menu.o: C:\App\Kiel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h
+.\objects\menu.o: C:\App\Kiel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h
+.\objects\menu.o: C:\App\Kiel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h
+.\objects\menu.o: .\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h
+.\objects\menu.o: Defines.h
+.\objects\menu.o: C:\App\Kiel\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\menu.o: Switches.h
+.\objects\menu.o: C:\App\Kiel\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.14.0\Device\Include\MKL25Z4.h
+.\objects\menu.o: Defines.h
+.\objects\menu.o: Defines.h

@@ -1,3 +1,5 @@
+#include "stdbool.h"										// Booleans
+
 #define red_led		(18)		// PORT B
 #define green_led	(19)		// PORT B
 #define blue_led	(1)			// PORT D

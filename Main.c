@@ -14,6 +14,7 @@
 #include "MKL25Z4.h"                    // Device header
 
 
+#include "Menu.h"
 #include "Board_LEDs.h"
 #include "Defines.h"
 #include "Display.h"
@@ -45,6 +46,29 @@ void initialize_board() {
  *----------------------------------------------------------------------------*/
 int main (void) {
 	initialize_board();
+	
+	bool pressed = false;
+	
+	while(1) {
+		if(switch_pressed(switch_1)) {
+			set_LEDs(0,0,1);
+		} else if (switch_pressed(switch_2)) {
+			set_LEDs(0,1,0);
+		} else if (switch_pressed(switch_3)) {
+			set_LEDs(0,1,1);
+		} else if (switch_pressed(switch_4)) {
+			set_LEDs(1,0,0);
+		} else if (switch_pressed(switch_5)) {
+			set_LEDs(1,0,1);
+		} else if (switch_pressed(switch_6)) {
+			set_LEDs(1,1,0);
+		} else {
+			pressed = false; // proven guilty
+			set_LEDs(1,1,1);
+		}
+	}
+	
+//	default_menu();
 	
 //	while(1) {
 

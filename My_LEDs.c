@@ -1,8 +1,4 @@
-#include "MKL25Z4.h"
-#include "Defines.h"
 #include "My_LEDs.h"
-
-#include "stdbool.h"										// Booleans
 
 void LED_init() {
 //	Make led pins GPIO

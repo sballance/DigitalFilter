@@ -1,4 +1,6 @@
-#include "stdbool.h"										// Booleans
+#include "stdint.h"
+#include "MKL25Z4.h"
+#include "Defines.h"
 
 #define DISPLAY_RW								(1)		// Read/Write output on port E
 #define DISPLAY_RS								(2)		// Register select output on port E
@@ -17,6 +19,8 @@ void display_init();
 void LCD_command(uint32_t command);
 
 void delayMs(uint32_t n);
+
+void start_multiline_message(char **display_lines);
 
 void send_multiline_message(char **display_lines);
 
